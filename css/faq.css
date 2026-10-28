@@ -1,0 +1,24 @@
+#faq {
+    position: relative;
+    border-radius: 2rem;
+    margin: var(--page-margin);
+    background-color: var(--secondary-box-bg-color);
+    padding: calc(var(--page-margin)/2);
+    border: inset var(--border-width) var(--secondary-color);
+}
+
+#faq ul {
+    list-style: none;
+    font-size: 1.4rem;
+    padding-left: unset;
+}
+
+#faq li + li {
+    margin-top: .8rem;
+}
+
+#faq-offset {
+    position: absolute;
+    top: -9rem;
+    height: 0;
+}

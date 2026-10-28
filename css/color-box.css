@@ -1,0 +1,67 @@
+/* default structure */
+
+.main-section {
+    padding: var(--page-margin);
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: fit-content;
+    grid-row-gap: var(--page-margin);
+}
+
+.main-section * {
+    height: fit-content;
+}
+
+.img-div {
+    grid-coulmn: span 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-div > img {
+    height: 20rem;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+}
+
+.text-div {
+    grid-column: span 2;
+    border-radius: 2rem;
+    padding: calc(var(--page-margin)/2);
+    height: fit-content;
+}
+
+.limit-width {
+    max-width: 75ch;
+    margin: auto;
+}
+
+/* coloring and border */
+
+.text-div.primary {
+    border: outset var(--border-width) var(--primary-color);
+}
+
+.text-div.secondary {
+    border: inset var(--border-width) var(--secondary-color);
+}
+
+.img-div.primary > img {
+    border: inset var(--border-width) var(--primary-color);
+}
+
+.img-div.secondary > img {
+    border: outset var(--border-width) var(--secondary-color);
+}
+
+.text-div.primary {
+    background-color: var(--box-bg-color);
+}
+
+.text-div.secondary {
+    background-color: var(--secondary-box-bg-color);
+}

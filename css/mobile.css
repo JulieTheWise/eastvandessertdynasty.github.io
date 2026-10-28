@@ -1,0 +1,106 @@
+@media (max-width: 50rem) and (orientation: portrait) {
+    :root {
+        --page-margin: 2rem;
+        --border-width: .3rem;
+    }
+    
+    nav {
+        position: sticky;
+        display: flex;
+        height: 12rem;
+    }
+    
+    nav h1 {
+        font-size: 1.4rem;
+    }
+    
+    nav li {
+        background-color: var(--box-bg-color);
+        border-radius: 1rem;
+        padding: .5rem;
+        margin: .5rem 0 .5rem 0;
+    }
+    
+    nav > ul {
+        position: unset;
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    nav > ul#home-nav-link {
+        position: unset;
+        width: 10rem;
+    }
+    
+    .bake-wrap {
+        flex-direction: column;
+        height: calc(20rem + 20rem);
+    }
+    
+    .slide > img {
+        min-height: unset !important;
+    }
+    
+    .img-div {
+        aspect-ratio: 1 / .6;
+    }
+    
+    section#main-section {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bake-wrap.secondary-color {
+        flex-direction: column-reverse;
+    }
+    
+    #main-header {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        padding-bottom: var(--page-margin);
+    }
+    
+    #get-quote {
+        max-width: calc(100% - (var(--page-margin)) * 2);
+        text-align: center;
+    }
+    
+    #main-header-text {
+        font-size: 18vw;
+    }
+    
+    #get-quote h1 {
+        font-size: 5mvh;
+    }
+    
+    footer {
+        height: fit-content;
+    }
+    
+    .underline {
+        text-decoration: underline;
+    }
+    
+    .underline::after {
+        all: unset;
+    }
+    
+    /* for some reason this works in the chrome emulator, but not on iphones, I tested it on an iphone 12 max, an iphone 14 pro, and an iphone 11 pro */
+    
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    /* this works on the iphones I tested*/
+    
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .text-div {
+        grid-column: span 1;
+    }
+}
