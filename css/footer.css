@@ -8,7 +8,8 @@ footer {
     height: 80vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: var(--page-margin) 1fr grid-template-rows: var(--page-margin) 1fr var(--page-margin);
+    grid-template-rows: var(--page-margin) 1fr;
+    grid-template-rows: var(--page-margin) 1fr var(--page-margin);
     margin: var(--page-margin);
     overflow: hidden;
 }
