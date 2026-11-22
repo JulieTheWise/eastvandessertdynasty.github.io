@@ -5,10 +5,10 @@
 :root {
     --text-color: #000000;
     --secondary-text-color: #3D3D3D;
-    --primary-color: #4cc9f0;
-    --secondary-color: #b04ef2;
-    --box-bg-color: #97DFF7;
-    --secondary-box-bg-color: #D391FF;
+    --primary-color: #b04ef2;
+    --secondary-color: #4cc9f0;
+    --box-bg-color: #D391FF;
+    --secondary-box-bg-color: #97DFF7;
     --bg-color: #FFFFFF;
     --page-margin: 4rem;
     --border-width: .5rem;
